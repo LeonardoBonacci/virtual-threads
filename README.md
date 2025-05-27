@@ -8,4 +8,4 @@ mvn spring-boot:build-image
 mvn gatling:test
 ```
 
-![Performance test results](gatling.jpg)
+![Performance test results](gatling.png)
