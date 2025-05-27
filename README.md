@@ -7,3 +7,5 @@ mvn spring-boot:build-image
 # cd gatling
 mvn gatling:test
 ```
+
+![Performance test results](gatling.jpg)
