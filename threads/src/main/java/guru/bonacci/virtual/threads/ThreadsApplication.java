@@ -5,13 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @RestController
 @SpringBootApplication
 public class ThreadsApplication {
 
+	
 	public static void main(String[] args) {
 		SpringApplication.run(ThreadsApplication.class, args);
 	}
@@ -22,7 +20,7 @@ public class ThreadsApplication {
 		try {
 			Thread.sleep(300);
 		} catch (InterruptedException e) {
-			log.error(e.getMessage());
+			System.out.println(e.getMessage());
 		}
 
 		long threadId = Thread.currentThread().threadId();
